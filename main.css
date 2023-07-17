@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* Alteracao do cabecalho */
+header  {
+    padding: 16px 16px 16px 16px;
+    background-color: rgb(100, 100, 230);
+    color: black;
+}
+/* Posicionar o link do lado do outro */
+header h1 , section h2 {
+    display: inline;
+    margin: 10px;
+    font-size: 40px;
+    font-family: 'Bungee', cursive;
+}
+/* Posicionar o link do lado do outro */
+header nav li {
+    display: inline;
+    margin: 10px;
+    font-size: 20px;
+}
+/* Alterar a cor no link e retirar o sublinhado */
+header nav a {
+    color: aliceblue;
+    text-decoration: none;
+}
+/* Destacar o link quando passar o mouse */
+header nav a:hover {
+    color: rgb(2, 2, 2);
+    font-weight: bold;
+}
+/* Limitar ate qtd de px e limitar ate 100% da largura e deixar a margem centralizada */
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+.container p {
+    margin-top: 10px;
+}
+/* Colocar conteudo do header mesma linha e alinhar no centro e espaços neles */
+header .container, section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* limitar as imagens */
+.videogames img {
+    height: 20px;
+    margin:10px 10px;
+}
+/* Imagens na mesma linha imagens */
+.videogames li {
+    display: inline;
+    margin-right: 8px;
+}
+section .container {
+    align-items: flex-start;
+    margin-top: 10px;
+}
+section {
+    padding: 24px o;
+    color: rgb(100, 100, 230);
+}
+section h2 {
+    margin-bottom:  12px;
+    font-size: 20px;
+}
+section p {
+    margin-bottom: 8px;
+}
+.imagemloja {
+    margin-right: 30px;
+}
+/* Tamanho da img do acompanhe */
+.acompanhe img {
+    height: 20px;
+    margin-left: 11px;
+}
+.acompanhe li {
+    display: inline;
+    margin-right: 8px;
+}
+.acompanhe li a {
+    text-decoration: none;
+}
+#contatos .container {
+    display: block;
+}
+ /* espacamento entre os itens */ 
+.contato {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+/* Os inputs um abaixo do outro, tamanho, espaço entre eles, tamanho interno */
+form input, textarea, button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    margin-left: 9px;
+    padding: 8px;
+}
+.contato h3 {
+    margin-left: 8px;
+    margin-bottom: 8px;
+}
+/* bloqueia o campo para nao ser alterado na pagina */
+form textarea {
+    resize: none;
+    height: 150px;
+}
+/* cor do botao e formato */ 
+form button {
+    background-color:  rgb(100, 100, 230);
+    border: none;
+    color: aliceblue;
+}
+/* efeito do botao */
+form button:hover {
+    background-color: rgb(61, 61, 142) ;
+    font-size: larger;
+    cursor: pointer;
+}
+/* forma e cor da borda dos inputs */
+input:focus textarea:focus {
+    outline-color:  rgb(100, 100, 230);;
+}
+footer {
+    background-color:  rgb(100, 100, 230);
+    display: flex;
+    color: aliceblue;
+    padding: 2px 0;
+}
